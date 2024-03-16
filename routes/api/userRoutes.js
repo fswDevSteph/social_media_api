@@ -1,14 +1,14 @@
 const router = require('express').Router();
-const { getAllUsers } = require('../controllers/userController') // import the functions from the user-controller.js file
-const { getUserById } = require('../controllers/userController'); // import the functions from the user-controller.js file
-const { createUser } = require('../controllers/userController'); // import the functions from the user-controller.js file
-const { updateUser } = require('../controllers/userController'); // import the functions from the user-controller.js file
+const { getAllUsers } = require('../../controllers/userController') // import the functions from the user-controller.js file
+const { getUserById } = require('../../controllers/userController'); // import the functions from the user-controller.js file
+const { createUser } = require('../../controllers/userController'); // import the functions from the user-controller.js file
+const { updateUser } = require('../../controllers/userController'); // import the functions from the user-controller.js file
 
-const { deleteUser } = require('../controllers/userController'); // import the functions from the user-controller.js file
+const { deleteUser } = require('../../controllers/userController'); // import the functions from the user-controller.js file
 
-const { addFriend } = require('../controllers/userController'); // import the functions from the user-controller.js file
+const { addFriend } = require('../../controllers/userController'); // import the functions from the user-controller.js file
 
-const { removeFriend } = require('../controllers/userController'); // import the functions from the user-controller.js file
+const { removeFriend } = require('../../controllers/userController'); // import the functions from the user-controller.js file
 
 
 
