@@ -17,7 +17,7 @@ router.route('/:thoughtId').get(getThoughtById); // this is the same as app.get(
 router.route('/').post(createThought); // this is the same as app.post('/api/thoughts', createThought);
 router.route('/:thoughtId').put(updateThought); // this is the same as app.put('/api/thoughts/:thoughtId', updateThought);
 router.route('/:thoughtId').delete(deleteThought); // this is the same as app.delete('/api/thoughts/:thoughtId', deleteThought);
-router.route('/:thoughtId/reactions/:reactionId').post(addReaction); // this is the same as app.post('/api/thoughts/:thoughtId/reactions/:reactionId', addReaction);
+router.route('/:thoughtId/reactions').post(addReaction); // this is the same as app.post('/api/thoughts/:thoughtId/reactions/:reactionId', addReaction);
 router.route('/:thoughtId/reactions/:reactionId').delete(removeReaction); // this is the same as app.delete('/api/thoughts/:thoughtId/reactions/:reactionId', removeReaction);
 
 module.exports = router;

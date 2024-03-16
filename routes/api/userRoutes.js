@@ -8,7 +8,7 @@ const { deleteUser } = require('../../controllers/userController'); // import th
 
 const { addFriend } = require('../../controllers/userController'); // import the functions from the user-controller.js file
 
-const { removeFriend } = require('../../controllers/userController'); // import the functions from the user-controller.js file
+const { deleteFriend } = require('../../controllers/userController'); // import the functions from the user-controller.js file
 
 
 
@@ -18,6 +18,6 @@ router.route('/').post(createUser); // this is the same as app.post('/api/users'
 router.route('/:userId').put(updateUser); // this is the same as app.put('/api/users/:userId', updateUser);
 router.route('/:userId').delete(deleteUser); // this is the same as app.delete('/api/users/:userId', deleteUser);
 router.route('/:userId/friends/:friendId').post(addFriend); // this is the same as app.post('/api/users/:userId/friends/:friendId', addFriend);
-router.route('/:userId/friends/:friendId').delete(removeFriend); // this is the same as app.delete('/api/users/:userId/friends/:friendId', removeFriend);
+router.route('/:userId/friends/:friendId').delete(deleteFriend); // this is the same as app.delete('/api/users/:userId/friends/:friendId', removeFriend);
 
 module.exports = router;
