@@ -11,7 +11,6 @@ const thoughtSchema = new mongoose.Schema(
         createdAt: {
             type: Date,
             default: Date.now,
-            get: createdAtVal => createdAtVal.toLocalDateString()
         },
         username: {
             type: String,
@@ -34,8 +33,7 @@ const thoughtSchema = new mongoose.Schema(
                 },
                 createdAt: {
                     type: Date,
-                    default: Date.now,
-                    get: createdAtVal => createdAtVal.toLocalDateString()
+                    default: Date.now
                 }
             }
         ]
